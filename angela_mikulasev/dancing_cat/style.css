@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+
+body {
+  margin: 0;
+  background-image: url('http://www.desktopweekly.com/wp-content/uploads/wallpapers/Computer/Rainbow-In-Sky-Hd-Desktop-Wallpaper.jpg');
+}
+
+/*#button start {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}*/
+
+.content {
+  text-align: center;
+  font-family: Amatic SC;
+  font-size: 40px;
+  background: rgba(255,255,255,0.5);
+}
+
+#cat {
+	position: relative;
+	left: 0px;
+	top: 80px;
+}
+
+.walk-left {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH"
+}
+
+.walk-right {
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  filter: FlipH;
+  -ms-filter: "FlipH"
+}
+
+

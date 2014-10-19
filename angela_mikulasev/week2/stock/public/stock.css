@@ -1,0 +1,14 @@
+h1 {
+	color: black;
+	font-size: 100px;
+	font-family: helvetica;
+}
+body {
+	background-image: url("http://images.bwbx.io/cms/2012-11-15/mf_pay47__01__630x420.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-align: center;
+	font-family: helvetica;
+	color: white;
+	font-size: 40px;
+}

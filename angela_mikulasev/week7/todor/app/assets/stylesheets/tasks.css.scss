@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Vidaloka);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+input {
+	padding-right: 10px;
+}
+
+li {
+	padding: 6px;
+}
+
+body {
+	padding-top: 32px;
+	padding-left: 210px;
+	background-color: rgba(114, 134, 140, 0.41);
+}
+
+.container {
+	max-width: 960px;
+}
+
+h1 {
+	font-family: Vidaloka;
+}
+
+label {
+	font-family: Open Sans;
+}
+
+a {
+	font-family: Open Sans;	
+	padding-right: 20px;
+}
+
+ul#tasks{
+	list-style: none;
+	position: relative;
+}
+
+input {
+	font-family: Open Sans;	
+}

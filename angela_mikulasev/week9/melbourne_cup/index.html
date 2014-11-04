@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Melbourne Cup 2014</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/cup.js"></script>
+  <link rel="stylesheet" href="css/cup.css">
+</head>
+<body>
+
+  <div class="everything">
+    <div class="container">
+      <h1>GA Melbourne Cup Sweep 2014</h1>
+
+      <h3 id="purchase">&nbsp;</h3>
+
+      <div class="field">
+        <ul>
+        </ul>
+      </div>
+
+      <div class="bet">
+        <p>$2 sweeps remaining: <strong id="stakes2"></strong></p>
+        <p>$5 sweeps remaining: <strong id="stakes5"></strong></p>
+        <input type="text" id="gambler" placeholder="Gambler's name">
+        <button id="bet2">Buy $2</button>
+        <button id="bet5">Buy $5</button>
+      </div>
+
+      <div class="sweep2">
+        <h2>$2 Sweep</h2>
+        <ul></ul>
+        <h3>Prizes</h3>
+        <div class="prizes" id="prizes2"></div>
+        <table>
+           <tr>
+             <th>Place</th>
+             <th>Prize</th>
+           </tr>
+           <tr>
+             <td>1st</td>
+             <td id="prize2first"></td>
+           </tr>
+           <tr>
+             <td>2nd</td>
+             <td id="prize2second"></td>
+           </tr>
+           <tr>
+             <td>3rd</td>
+             <td id="prize2third"></td>
+           </tr>
+           <tr>
+             <td id="prize2wooden">Wooden Sppon</td>
+             <td></td>
+           </tr>
+         </table> 
+      </div>
+
+      <div class="sweep5">
+        <h2>$5 Sweep</h2>
+        <ul></ul>
+        <div class="prizes" id="prizes2"></div>
+        <h3>Prizes</h3>
+        <table>
+           <tr>
+             <th>Place</th>
+             <th>Prize</th>
+           </tr>
+           <tr>
+             <td>1st</td>
+             <td id="prize5first"></td>
+           </tr>
+           <tr>
+             <td>2nd</td>
+             <td id="prize5second"></td>
+           </tr>
+           <tr>
+             <td>3rd</td>
+             <td id="prize5third"></td>
+           </tr>
+           <tr>
+             <td>Wooden Sppon</td>
+             <td id="prize5wooden"></td>
+           </tr>
+         </table> 
+      </div>
+
+    </div>
+  </div>
+
+<a href="http://www.cornify.com" onclick="cornify_add();return false;"><img src="http://www.cornify.com/assets/cornify.gif" width="61" height="16" border="0" alt="Cornify" /></a><script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+
+</body>
+</html>

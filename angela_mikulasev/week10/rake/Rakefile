@@ -1,0 +1,68 @@
+# directory "tmp" # means make a directory
+
+# file "tmp/hello" => "tmp" do # create a file created hello inside tmp folder
+#   sh "echo 'Hello' >> tmp/hello" # Hello will be written in tmp/hello
+# end
+
+# run rake hello in terminal and will generate tmp folder and hello file inside tmp folder
+
+task :default => 'morning:get_ready' # going into the morningnamespce and getting the get_ready task
+
+namespace :morning do
+  desc "turn off alarm"
+  task :turn_off_alarm do
+    puts "Alarm disabled"
+  end
+
+  # run rake turn_off_alarm => will print out "alarm disabled"
+
+  desc "get ready for the day"
+  task :groom_self do 
+    puts "brush teeth"
+    puts "brush hair"
+    puts "eat breaky"
+  end
+
+  # rake turn_off_alarm groom_self
+  # =>Alarm disabled
+  # =>brush teeth
+  # =>brush hair
+  # =>eat breaky
+
+  desc "coffee time"
+  task :make_coffee do
+    cups = ENV['COFFEE_CUPS'] || 2
+    puts "Made #{ cups } cups of coffee today."
+  end
+
+  # COFFEE_CUPS=12 rake make_coffee => will temporarily set a ENV, othewise will run 2
+
+  task :walk_dog do
+    puts "buddles walked"
+  end
+
+desc "morning schedule"
+  task :get_ready => [:turn_off_alarm, :groom_self, :make_coffee, :walk_dog] do
+    puts "Ready for the day!"
+  end
+  # run rake get_ready => runs all in order
+end
+
+namespace :morning do
+  task :groom_self do
+    puts "wear some fancy clothes"
+  end
+end
+
+namespace :afternoon do
+  task :make_coffee do
+    Rake::Task['morning:make_coffee'].invoke
+    puts "ready for the afternoon"
+  end
+end
+
+
+
+
+
+
